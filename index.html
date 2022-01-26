@@ -441,6 +441,43 @@
             border-bottom: 4px solid;
             /* margin-top: 10px; */
         }
+        .abo {
+            border: 3px solid black;
+            /* background-color: rgb(255, 221, 176); */
+            padding: 10px 10px 80px 10px;
+            margin: 40px 10px 10px 230px;
+            border-radius: 20px;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+            justify-content: center;
+            /* display: flex; */
+            position: relative;
+            height: 250px;
+            width: 800px;
+            align-items: center;
+            align-self: center;
+        }
+       .abo:before{
+           content: '';
+           position: absolute;
+           top: 10px;
+           left: -2px;
+           width: calc(100% + 6px);
+           height: calc(100% - 12px);
+           background: #fff;
+           transition: o.5s eas-in-out;
+           transform: scaleY(1);
+           border-radius: 20px;
+       }
+       .abo:hover:before{
+           transform: scaleY(0);
+       }
+       .abo h1{
+           position: relative;
+       }
+       .abo li{
+           position: relative;
+           font-family: 'Ubuntu', sans-serif;
+       }
 
         .vie {
             margin-top: 500px;
@@ -652,42 +689,6 @@
             }
         }
 
-        .abo {
-            border: 3px solid black;
-            /* background-color: rgb(255, 221, 176); */
-            padding: 10px 10px 10px 10px;
-            margin: 40px 10px 10px 230px;
-            border-radius: 20px;
-            box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
-            justify-content: center;
-            /* display: flex; */
-            position: relative;
-            height: 250px;
-            width: 800px;
-            align-items: center;
-            align-self: center;
-        }
-       .abo:before{
-           content: '';
-           position: absolute;
-           top: 10px;
-           left: -2px;
-           width: calc(100% + 6px);
-           height: calc(100% - 12px);
-           background: #fff;
-           transition: o.5s eas-in-out;
-           transform: scaleY(1)
-       }
-       .abo:hover:before{
-           transform: scaleY(0);
-       }
-       .abo h1{
-           position: relative;
-       }
-       .abo li{
-           position: relative;
-       }
-
     </style>
 </head>
 
@@ -783,21 +784,21 @@
             <div class="content">
                 <h1>What ThoriumTek is all about?</h1>
                 <p>
-                     <li>The company started in 2021.</li><br>
+                    <li>The company started in 2021.</li><br>
                     <li>Our Early Investment Into Infrastructure And People, Made Our Products
                     Receive Immediate Acceptance In
                     The Market. Our Offices Are In Delhi.The startup is creating innovative products, providing services
                     and
                     improving existing products by making
-                    the best use to help our country in various fields like air force, health, education, military, etc.</li> 
-                   <li>We aim to create not just the best products in India, but the best products for India.<br>
+                    the best use to help our country in various fields like air force, health, education, military, etc.</li><br>
+                   <li>We aim to create not just the best products in India, but the best products for India.
                     Solves various problems that are occurring in different sectors such as in defence, health,
                     aerospace,
-                    and also in various industries by providing the technologies and best products.
-                    The problem like: cannot see in long range if anyone is there or not.
+                    and also in various industries by providing the technologies and best products.</li><br>
+                    <li>The problem like: cannot see in long range if anyone is there or not.
                     They use natural energy like solar energy or hydro energy to produce that energy into electrical
                     energy,
-                    etc.</li> 
+                    etc.</li> <br>
                 </p>
             </div>
         </div>
