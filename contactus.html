@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <title>Countact Us - ThoriumTek</title>
+    <style>
+        .bgimg::before {
+            content: "";
+            background: url('img18.jpeg');
+            background-repeat: no-repeat;
+            padding: 50px;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            left: 0px;
+            bottom: 0px;
+            background-size: cover;
+            /* background: rgba(red, green, blue, alpha); */
+            opacity: 0.75;
+        }
+
+        .left img {
+            width: 100px;
+            /* 100% 100% 100%; */
+            /* background-color: white; */
+            padding-left: 50px;
+            padding-top: 50px;
+            /* top: 50px; */
+            /* display: inline; */
+            position: relative;
+            /* clip-path: circle(); */
+            border-radius: 23px;
+        }
+
+        .center {
+            display: inline;
+            margin: 22px auto;
+            width: 55%;
+            /* do margin auto whenever you want anything in middle  */
+            /* border: 2px solid rgb(232, 232, 240); */
+            top: 22px;
+            /* position: fixed; */
+            position: relative;
+            font-size: 10px;
+            padding: 30px 10px 10px 50px;
+        }
+
+        .navbar {
+            display: inline;
+            /* font-size: 20px; */
+            /* margin: 0px 14px 5px 400px; */
+            color: white;
+            float: right;
+            padding: 50px 100px 15px 21px;
+            visibility: visible;
+            position: relative;
+        }
+
+        .navbar li {
+            display: inline;
+            color: rgb(255, 255, 255);
+
+        }
+
+        .navbar li a {
+            /* display: inline-block; */
+            font-size: 20px;
+            text-decoration: none;
+            color: white;
+            padding: 20px 10px;
+            font-size: 25px;
+        }
+
+        .navbar li a:hover {
+            /* text-decoration: underline; */
+            color: rgb(214, 255, 227);
+        }
+
+        .left {
+            display: inline-block;
+        }
+
+        .txt1 p1 {
+            display: inline-block;
+            padding: 100px 10px 10px 50px;
+            /* opacity: 1; */
+            font-size: 70px;
+            top: 100px;
+            position: relative;
+            font-family: 'Lobster', cursive;
+            color: rgb(255, 255, 255);
+            animation: movedown 1s linear 1;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+            visibility: hidden;
+        }
+
+        .txt1 p2 {
+            padding: 250px 10px 10px 50px;
+            /* display: inline-block; */
+            /* opacity: 1; */
+            font-size: 20px;
+            top: 100px;
+            position: relative;
+            color: rgb(255, 255, 255);
+            font-family: 'Lobster', cursive;
+            animation: moveup 1s linear 1;
+            animation-delay: 1s;
+            visibility: hidden;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes movedown {
+            0% {
+                transform: translateY(-100px);
+                visibility: visible;
+            }
+
+            100% {
+                transform: translateY(0px);
+                visibility: visible;
+            }
+        }
+
+        @keyframes moveup {
+            0% {
+                transform: translateY(100px);
+                visibility: visible;
+            }
+
+            100% {
+                transform: translateY(0px);
+                visibility: visible;
+            }
+        }
+
+        .part1 {
+            display: flex;
+            margin: 400px 10px 50px 80px;
+        }
+        .address{
+            margin-right: 150px;
+        }
+        form{
+            /* border: 2px solid black; */
+            padding: 0 10px 10px 10px;
+            justify-content: center;
+        }
+
+        .contain {
+            max-width: 1170px;
+            margin: auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .footer {
+            background-color: #24262b;
+            padding: 70px 0;
+        }
+
+        .footer-col {
+            width: 25%;
+            padding: 0 40px;
+        }
+
+        .footer-col h4 {
+            font-size: 18px;
+            color: #ffffff;
+            text-transform: capitalize;
+            margin-bottom: 35px;
+            font-weight: 400;
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .footer-col h4::before {
+            content: '';
+            position: absolute;
+            left: 35px;
+            bottom: -10px;
+            background-color: #e91e63;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+            /* padding-left: 30px; */
+        }
+
+        .footer-col ul li:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            font-size: 16px;
+            text-transform: capitalize;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 300;
+            color: #bbbbbb;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        .footer-col ul li a:hover {
+            color: #ffffff;
+            padding-left: 6px;
+        }
+
+        .footer-col .social-links a {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgba(255, 255, 255, 0.2);
+            margin: 0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: #ffffff;
+            transition: all 0.5s ease;
+        }
+
+        .footer-col .social-links a:hover {
+            color: #24262b;
+            background-color: #ffffff;
+        }
+
+        /*responsive*/
+        @media(max-width: 767px) {
+            .footer-col {
+                width: 50%;
+                margin-bottom: 30px;
+            }
+        }
+
+        @media(max-width: 574px) {
+            .footer-col {
+                width: 100%;
+            }
+        }
+        #des{
+            width: 500px;
+            height: 80px;
+            justify-content: first baseline;
+            text-align: justify;
+            background-color: rgb(240, 238, 235);
+            border: 2px solid rgb(182, 182, 182);
+            font-size: 20px;
+        }
+        .form1{
+            margin: 0 50px 10px 100px;
+            font-size: 20px;
+        }
+        #title{
+            width: 500px;
+            height: 30px;
+            background-color: rgb(240, 238, 235);
+            border: 2px solid rgb(182, 182, 182);
+            font-size: 15px;
+            padding: 10px 10px 10px 10px;
+        }
+        #but{
+            width: 150px;
+            height: 30px;
+            background-color: rgb(61, 142, 248);
+            /* border: 2px solid rgb(182, 182, 182); */
+            font-size: 15px;
+            padding: 10px 10px 30px 10px;
+            justify-content: center;
+            border-radius: 15px;
+            /* margin-left: 50px; */
+        }
+        #but:hover{
+            /* background-color: white; */
+            border: 2px solid black;
+            color: black;
+            background-color: rgb(240, 238, 235);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bgimg">
+        <header>
+            <!-- here left for logo -->
+            <div class="left">
+                <img src="logo.png" class="lo1" alt="Logo of the company ThoriumTek">
+            </div>
+            <!-- center for navigation bar -->
+            <div class="center">
+                <ul class="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html" target="_blank">Services</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="#" class="active">Contact Us</a></li>
+                    <li><a href="" target="_blank">Store</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="txt1">
+            <p1>Contact Us</p1><br>
+            <p2>We don’t earn loyalty in a day. We earn loyalty day-by-day.</p2>
+        </div>
+        <div class="part1">
+            <div class="address">
+                <h1>Our Mark</h1>
+                <h3>Registered Office</h3>
+                <p>
+                    Delhi<br><br>Sector 39- Rohini,<br><br> New Delhi-110081,<br><br>Delhi, India
+                </p>
+                <h3>Head Office</h3>
+                <p>Brampton,<br><br> ONTARIO L6X 3T7,<br><br> Ontario, Canada</p>
+                <hr class="one">
+                <h1>Call Us</h1>
+                <p>
+                    Phone: +91 9555732917,
+                    +91 9555732917
+                    <br><br>
+                    Monday to Friday - 9:00 AM to 6:00 PM
+                </p>
+                <hr>
+                <h1>Write to Us</h1>
+                <p>Business Inquiries: Info@thoriumtek.com <br><br>
+                    After Sales Support: sales@thoriumtek.com</p>
+            </div>
+            <div class="form1">
+                <form action="" class="contant">
+                    <h1>Let's talk</h1>
+                    <input type="text" id="title" placeholder="Your title"> <br><br>
+                    <input type="text" id="title" placeholder="First name"><br><br>
+                    <input type="text" id="title" placeholder="Last name"><br><br>
+                    <input type="email" id="title" name="kreena Patel" id="name@example.com" placeholder="Email"><br><br>
+                    <input type="" id="title" placeholder="Mobile number"><br><br>
+                    <!-- <label for="about">How did you hear about us</label>
+                    <section id="about">
+                        <option>Select here</option>
+                        <option value="cr">Customer Referral</option>
+                        <option value="gs">Google Search</option>
+                        <option value="nam">News and Media</option>
+                        <option value="de">Direct Mail/Email</option>
+                        <option value="em">Event and Conferences</option>
+                        <option value="sm">Social Media</option>
+                        <option>Other</option>
+                    </section> -->
+                    <!-- <input type="range" name="" id=""> -->
+                    <input type="text" id="title" placeholder="How did you hear about us"><br><br>
+                    <label for="des">Enter Description:</label><br>
+                    <input type="text" id="des"><br><br>
+                    <input type="button" id="but" value="Send Query">
+                </form>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="contain">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>company</h4>
+                        <ul>
+                            <li><a href="index.html#about">About us</a></li>
+                            <li><a href="#">News and media</a></li>
+                            <li><a href="contactus.html">Contact us</a></li>
+                            <li><a href="#">Partner with us</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Get help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">Investor</a></li>
+                            <li><a href="#">Product support</a></li>
+                            <li><a href="sitemap.html">Sitemap</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.youtube.com/channel/UCglYPXMWptHk-j1IScIO8fw"><i
+                                    class="fab fa-youtube"></i></a>
+                            <a href="https://www.instagram.com/thoriumtek/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/thoriumtek/?originalSubdomain=in"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
