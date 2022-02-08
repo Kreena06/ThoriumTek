@@ -185,7 +185,8 @@
             padding: 20px 10px;
             font-size: 25px;
         }
-        .navbar li a:active{
+
+        .navbar li a:active {
             text-decoration: underline;
             color: rgb(214, 255, 227);
         }
@@ -208,9 +209,10 @@
         .text2 img {
             float: right;
             width: 40%;
-            margin: -530px 100px 10px 10px;
+            margin: -335px 100px 10px 10px;
             border-radius: 5%;
             border: 2px solid;
+            display: inline;
         }
 
         .boxeff {
@@ -313,6 +315,200 @@
             background-color: rgb(214, 255, 227);
         }
 
+        .banner1,
+        .banner2,
+        .banner3,
+        .banner4,
+        .banner5 {
+            position: absolute;
+            height: 380px;
+            width: 1150px;
+            margin: 50px 50px 0px 50px;
+            background-color: blanchedalmond;
+            border-radius: 10px;
+        }
+
+        .banner1 img{
+            position: absolute;
+            width: 450px;
+            height: 300px;
+            left: 55%;
+            margin-top: 40px;
+            border-radius: 10px;
+        }
+        .banner2 img{
+            position: absolute;
+            width: 450px;
+            height: 300px;
+            left: 55%;
+            margin-top: 40px;
+            border-radius: 10px;
+        }
+        .banner3 img{
+            position: absolute;
+            width: 450px;
+            height: 300px;
+            left: 55%;
+            margin-top: 40px;
+            border-radius: 10px;
+        }
+        .banner4 img{
+            position: absolute;
+            width: 450px;
+            height: 300px;
+            left: 55%;
+            margin-top: 40px;
+            border-radius: 10px;
+        }
+        .banner5 img {
+            position: absolute;
+            width: 450px;
+            height: 300px;
+            left: 55%;
+            margin-top: 40px;
+            border-radius: 10px;
+        }
+
+        .banner1 {
+            animation: slide1 12s linear infinite;
+        }
+
+        .banner2 {
+            animation: slide2 12s linear infinite;
+        }
+
+        .banner3 {
+            animation: slide3 12s linear infinite;
+        }
+
+        .banner4 {
+            animation: slide4 12s linear infinite;
+        }
+
+        .banner5 {
+            animation: slide5 12s linear infinite;
+        }
+        @keyframes slide1{
+            0%{
+                visibility: visible;
+            }
+            20%{
+                visibility: hidden;
+            }
+            40%{
+                visibility: hidden;
+            }
+            60%{
+                visibility: hidden;
+            }
+            80%{
+                visibility: hidden;
+            }
+            100%{
+                visibility: visible;
+            }
+        }
+        @keyframes slide2{
+            0%{
+                visibility: hidden;
+            }
+            20%{
+                visibility: hidden;
+            }
+            40%{
+                visibility: visible;
+            }
+            60%{
+                visibility: hidden;
+            }
+            80%{
+                visibility: hidden;
+            }
+            100%{
+                visibility: hidden;
+            }
+        }
+        @keyframes slide3{
+            0%{
+                visibility: hidden;
+            }
+            20%{
+                visibility: visible;
+            }
+            40%{
+                visibility: hidden;
+            }
+            60%{
+                visibility: hidden;
+            }
+            80%{
+                visibility: hidden;
+            }
+            100%{
+                visibility: hidden;
+            }
+        }
+        @keyframes slide4{
+            0%{
+                visibility: hidden;
+            }
+            20%{
+                visibility: hidden;
+            }
+            40%{
+                visibility: hidden;
+            }
+            60%{
+                visibility: visible;
+            }
+            80%{
+                visibility: hidden;
+            }
+            100%{
+                visibility: hidden;
+            }
+        }
+        @keyframes slide5{
+            0%{
+                visibility: hidden;
+            }
+            20%{
+                visibility: hidden;
+            }
+            40%{
+                visibility: hidden;
+            }
+            60%{
+                visibility: hidden;
+            }
+            80%{
+                visibility: visible;
+            }
+            100%{
+                visibility: hidden;
+            }
+        }
+
+        .textbox1 {
+            width: 500px;
+            position: absolute;
+            left: 90px;
+            margin-top: 100px;
+            font-size: large;
+        }
+
+        .textbox1 span {
+            background-color: black;
+            height: 2px;
+            width: 100px;
+            position: absolute;
+        }
+
+        .textbox1 p {
+            margin-top: 50px;
+            position: absolute;
+        }
+
         .fea h2 {
             margin: 150px 10px 10px 10px;
             /* align-items: center; */
@@ -327,7 +523,7 @@
             justify-content: space-around;
             align-items: center;
             width: 100%;
-            margin: 10px 10px 10px 10px;
+            margin: 400px 10px 10px 10px;
             display: flex;
         }
 
@@ -447,6 +643,7 @@
             border-bottom: 4px solid;
             /* margin-top: 10px; */
         }
+
         .contain {
             max-width: 1170px;
             margin: auto;
@@ -544,7 +741,6 @@
                 width: 100%;
             }
         }
-
     </style>
 </head>
 
@@ -610,6 +806,58 @@
             </div>
         </div>
         <hr class="one">
+        <div class="banner">
+            <div class="banner1">
+                <img src="vidsur.jpeg" alt="">
+                <div class="textbox1">
+                    <h2>Video Surveillance</h2>
+                    <span></span>
+                    <p>The reliability, integrity and dependability of our video systems ensure that you can meet all of
+                        your existing and future security challenges with complete confidence.</p>
+                </div>
+            </div>
+            <div class="banner2">
+                <img src="evcb.jpeg" alt="">
+                <div class="textbox1">
+                    <h2>EV Chearging Booth</h2>
+                    <span></span>
+                    <p>EVs are ready to serve the vehicles of today and tomorrow with a balance of flexibility, power
+                        and
+                        speed in a compact solution and saves environment</p>
+                </div>
+            </div>
+            <div class="banner3">
+                <img src="fas.png" alt="">
+                <div class="textbox1">
+                    <h2>Fire Alarm System</h2>
+                    <span></span>
+                    <p>Where a simple shout or manually operated device is not adequate, it is likely that an electrical
+                        fire warning system will be required</p>
+                </div>
+            </div>
+            <div class="banner4">
+                <img src="indanc.jpeg" alt="">
+                <div class="textbox1">
+                    <h2>Industrial Ancillaries</h2>
+                    <span></span>
+                    <p>ThoriumTek has a large inventory of aftermarket and OEM parts available. We can provide you with
+                        parts for any make and model of automobile, aerial equipment, industrial equipment, and tractor
+                        trailers.</p>
+                </div>
+            </div>
+            <div class="banner5">
+                <img src="ssb.png" alt="">
+                <div class="textbox1">
+                    <h2>Smart Solar Bench</h2>
+                    <span></span>
+                    <p>It’s beautiful and timeless design hides multiple functionalities. The bench also transmits
+                        wireless
+                        4G WiFi within a 10-20-metre radius. LED lighting in white, blue, green or red can also be
+                        powered
+                        by the solar panels.</p>
+                </div>
+            </div>
+        </div>
         <div class="boxtec1">
             <div class="tech1">
                 <h3>Aviation and Aerospace</h3>
