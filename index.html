@@ -186,14 +186,11 @@
             font-size: 25px;
         }
 
-        .navbar li a:active {
-            text-decoration: underline;
-            color: rgb(214, 255, 227);
+        .navbar li a:hover{
+            color: rgb(169, 243, 192);
         }
-
-        .navbar li a:hover:active {
-            /* text-decoration: underline; */
-            color: rgb(214, 255, 227);
+        .navbar li a:active{
+            text-decoration: underline;
         }
 
         .left {
@@ -328,7 +325,7 @@
             border-radius: 10px;
         }
 
-        .banner1 img{
+        .banner1 img {
             position: absolute;
             width: 450px;
             height: 300px;
@@ -336,7 +333,8 @@
             margin-top: 40px;
             border-radius: 10px;
         }
-        .banner2 img{
+
+        .banner2 img {
             position: absolute;
             width: 450px;
             height: 300px;
@@ -344,7 +342,8 @@
             margin-top: 40px;
             border-radius: 10px;
         }
-        .banner3 img{
+
+        .banner3 img {
             position: absolute;
             width: 450px;
             height: 300px;
@@ -352,7 +351,8 @@
             margin-top: 40px;
             border-radius: 10px;
         }
-        .banner4 img{
+
+        .banner4 img {
             position: absolute;
             width: 450px;
             height: 300px;
@@ -360,6 +360,7 @@
             margin-top: 40px;
             border-radius: 10px;
         }
+
         .banner5 img {
             position: absolute;
             width: 450px;
@@ -388,106 +389,141 @@
         .banner5 {
             animation: slide5 12s linear infinite;
         }
-        @keyframes slide1{
-            0%{
+
+        @keyframes slide1 {
+            0% {
                 visibility: visible;
             }
-            20%{
+
+            20% {
                 visibility: hidden;
             }
-            40%{
+
+            40% {
                 visibility: hidden;
             }
-            60%{
+
+            60% {
                 visibility: hidden;
             }
-            80%{
+
+            80% {
                 visibility: hidden;
             }
-            100%{
+
+            100% {
                 visibility: visible;
             }
         }
-        @keyframes slide2{
-            0%{
+
+        @keyframes slide2 {
+            0% {
                 visibility: hidden;
             }
-            20%{
+
+            20% {
                 visibility: hidden;
             }
-            40%{
+
+            40% {
                 visibility: visible;
             }
-            60%{
+
+            60% {
                 visibility: hidden;
             }
-            80%{
+
+            80% {
                 visibility: hidden;
             }
-            100%{
+
+            100% {
                 visibility: hidden;
             }
         }
-        @keyframes slide3{
-            0%{
+
+        @keyframes slide3 {
+            0% {
                 visibility: hidden;
             }
-            20%{
+
+            20% {
                 visibility: visible;
             }
-            40%{
+
+            40% {
                 visibility: hidden;
             }
-            60%{
+
+            60% {
                 visibility: hidden;
             }
-            80%{
+
+            80% {
                 visibility: hidden;
             }
-            100%{
+
+            100% {
                 visibility: hidden;
             }
         }
-        @keyframes slide4{
-            0%{
+
+        @keyframes slide4 {
+            0% {
                 visibility: hidden;
             }
-            20%{
+
+            20% {
                 visibility: hidden;
             }
-            40%{
+
+            40% {
                 visibility: hidden;
             }
-            60%{
+
+            60% {
                 visibility: visible;
             }
-            80%{
+
+            80% {
                 visibility: hidden;
             }
-            100%{
+
+            100% {
                 visibility: hidden;
             }
         }
-        @keyframes slide5{
-            0%{
+
+        @keyframes slide5 {
+            0% {
                 visibility: hidden;
             }
-            20%{
+
+            20% {
                 visibility: hidden;
             }
-            40%{
+
+            40% {
                 visibility: hidden;
             }
-            60%{
+
+            60% {
                 visibility: hidden;
             }
-            80%{
+
+            80% {
                 visibility: visible;
             }
-            100%{
+
+            100% {
                 visibility: hidden;
             }
         }
+
+        /* .fbox{
+            display: flex;
+            margin-top: 0px;
+        } */
 
         .textbox1 {
             width: 500px;
@@ -657,6 +693,43 @@
         ul {
             list-style: none;
         }
+        .com{
+            display: flex;
+        }
+        .partner{
+            box-shadow: 0 25px 25px rgba(0, 0, 0, .5);
+            margin: 30px 0px 30px 0px;
+            font-family: 'Lobster', cursive;
+        }
+        .partner h1{
+            text-align: center;
+            font-size: 50px;
+        }
+        .part1 img{
+            width: 200px;
+            height: 100px;
+            /* border-radius: 100%; */
+            margin: 20px 60px 20px 50px;
+        }
+        .part2 img{
+            width: 200px;
+            height: 100px;
+            /* border-radius: 100%; */
+            margin: 20px 60px 20px 30px;
+        }
+        .part3 img{
+            width: 200px;
+            height: 70px;
+            /* border-radius: 50%; */
+            /* padding: 20px 20px 20px 20px; */
+            margin: 30px 60px 20px 30px;
+        }
+        .part4 img{
+            width: 200px;
+            height: 70px;
+            /* border-radius: 100%; */
+            margin: 30px 60px 20px 30px;
+        }
 
         .footer {
             background-color: #24262b;
@@ -755,10 +828,10 @@
             <div class="center">
                 <ul class="navbar">
                     <li><a href="#" class="active">Home</a></li>
-                    <li><a href="services.html" target="_blank">Services</a></li>
+                    <li><a href="services.html">Services</a></li>
                     <li><a href="aboutus.html">About Us</a></li>
                     <li><a href="contactus.html">Contact Us</a></li>
-                    <li><a href="" target="_blank">Store</a></li>
+                    <li><a href="store.html">Store</a></li>
                 </ul>
             </div>
             <!-- right for button -->
@@ -813,7 +886,8 @@
                     <h2>Video Surveillance</h2>
                     <span></span>
                     <p>The reliability, integrity and dependability of our video systems ensure that you can meet all of
-                        your existing and future security challenges with complete confidence.</p>
+                        your existing and future security challenges with complete confidence.
+                    </p>
                 </div>
             </div>
             <div class="banner2">
@@ -833,96 +907,120 @@
                     <span></span>
                     <p>Where a simple shout or manually operated device is not adequate, it is likely that an electrical
                         fire warning system will be required</p>
-                </div>
-            </div>
-            <div class="banner4">
-                <img src="indanc.jpeg" alt="">
-                <div class="textbox1">
-                    <h2>Industrial Ancillaries</h2>
-                    <span></span>
-                    <p>ThoriumTek has a large inventory of aftermarket and OEM parts available. We can provide you with
-                        parts for any make and model of automobile, aerial equipment, industrial equipment, and tractor
-                        trailers.</p>
-                </div>
-            </div>
-            <div class="banner5">
-                <img src="ssb.png" alt="">
-                <div class="textbox1">
-                    <h2>Smart Solar Bench</h2>
-                    <span></span>
-                    <p>It’s beautiful and timeless design hides multiple functionalities. The bench also transmits
-                        wireless
-                        4G WiFi within a 10-20-metre radius. LED lighting in white, blue, green or red can also be
-                        powered
-                        by the solar panels.</p>
+                    <!-- <h3>Features</h3>
+                    <div class="fbox">
+                        <div class="fbox1">Motion Sensor</div>
+                        <div class="fbox2">Infra Mode</div>
+                        <div class="fbox3">cloud storage</div>
+                        <div class="fbox4">video</div> -->
                 </div>
             </div>
         </div>
-        <div class="boxtec1">
-            <div class="tech1">
-                <h3>Aviation and Aerospace</h3>
-                <img src="aero.jpeg" alt="">
-                <!-- <button class="vie">Know More</button> -->
-                <a class="vie" href="aerospace.html">Know More</a>
-            </div>
-            <div class="tech2">
-                <h3>Health Care Analytics</h3>
-                <img src="health.jpeg" alt="">
-                <a class="vie" href="health.html">Know More</a>
-            </div>
-            <div class="tech3">
-                <h3>Energy Tech</h3>
-                <img src="energy.png" alt="">
-                <a class="vie" href="energy.html">Know More</a>
-            </div>
-            <div class="tech4">
-                <h3>Industrial Tech</h3>
-                <img src="indu.jpeg" alt="">
-                <a class="vie" href="industry.html">Know More</a>
+        <div class="banner4">
+            <img src="indanc.jpeg" alt="">
+            <div class="textbox1">
+                <h2>Industrial Ancillaries</h2>
+                <span></span>
+                <p>ThoriumTek has a large inventory of aftermarket and OEM parts available. We can provide you with
+                    parts for any make and model of automobile, aerial equipment, industrial equipment, and tractor
+                    trailers.</p>
             </div>
         </div>
-        <div class="boxtec2">
+        <div class="banner5">
+            <img src="ssb.png" alt="">
+            <div class="textbox1">
+                <h2>Smart Solar Bench</h2>
+                <span></span>
+                <p>It’s beautiful and timeless design hides multiple functionalities. The bench also transmits
+                    wireless
+                    4G WiFi within a 10-20-metre radius. LED lighting in white, blue, green or red can also be
+                    powered
+                    by the solar panels.</p>
+            </div>
         </div>
-        <hr id="about" class="one">
-        <!-- <hr class="two"> -->
+    </div>
+    <div class="boxtec1">
+        <div class="tech1">
+            <h3>Aviation and Aerospace</h3>
+            <img src="aero.jpeg" alt="">
+            <!-- <button class="vie">Know More</button> -->
+            <a class="vie" href="aerospace.html">Know More</a>
+        </div>
+        <div class="tech2">
+            <h3>Health Care Analytics</h3>
+            <img src="health.jpeg" alt="">
+            <a class="vie" href="health.html">Know More</a>
+        </div>
+        <div class="tech3">
+            <h3>Energy Tech</h3>
+            <img src="energy.png" alt="">
+            <a class="vie" href="energy.html">Know More</a>
+        </div>
+        <div class="tech4">
+            <h3>Industrial Tech</h3>
+            <img src="indu.jpeg" alt="">
+            <a class="vie" href="industry.html">Know More</a>
+        </div>
+    </div>
+    <div class="boxtec2">
+    </div>
+    <!-- <hr id="about" class="one"> -->
+    <div class="partner">
+        <h1>Our Technology Partner</h1>
+        <div class="com">
+            <div class="part1">
+                <img src="textel.png" alt="">
+            </div>
+            <div class="part2">
+                <img src="tege.jpeg" alt="">
+            </div>
+            <div class="part3">
+                <img src="snapone.png" alt="">
+            </div>
+            <div class="part4">
+                <img src="aolairescue.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- <hr class="two"> -->
 
-        <footer class="footer">
-            <div class="contain">
-                <div class="row">
-                    <div class="footer-col">
-                        <h4>company</h4>
-                        <ul>
-                            <li><a href="#about">About us</a></li>
-                            <li><a href="#">News and media</a></li>
-                            <li><a href="contactus.html">Contact us</a></li>
-                            <li><a href="#">Partner with us</a></li>
-                            <li><a href="#">privacy policy</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>Get help</h4>
-                        <ul>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">Blogs</a></li>
-                            <li><a href="#">Investor</a></li>
-                            <li><a href="#">Product support</a></li>
-                            <li><a href="sitemap.html">Sitemap</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>follow us</h4>
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://www.youtube.com/channel/UCglYPXMWptHk-j1IScIO8fw"><i
-                                    class="fab fa-youtube"></i></a>
-                            <a href="https://www.instagram.com/thoriumtek/"><i class="fab fa-instagram"></i></a>
-                            <a href="https://www.linkedin.com/company/thoriumtek/?originalSubdomain=in"><i
-                                    class="fab fa-linkedin-in"></i></a>
-                        </div>
+    <footer class="footer">
+        <div class="contain">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#">News and media</a></li>
+                        <li><a href="contactus.html">Contact us</a></li>
+                        <li><a href="#">Partner with us</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Investor</a></li>
+                        <li><a href="#">Product support</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.youtube.com/channel/UCglYPXMWptHk-j1IScIO8fw"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/thoriumtek/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/thoriumtek/?originalSubdomain=in"><i
+                                class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 
     </div>
 </body>

@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-    <title>Countact Us - ThoriumTek</title>
+    <title>Store - ThoriumTek</title>
     <style>
         .bgimg::before {
             content: "";
-            background: url('img18.jpeg');
+            background: url('bg3.jpeg');
             background-repeat: no-repeat;
             padding: 50px;
             position: absolute;
@@ -25,6 +26,34 @@
             background-size: cover;
             /* background: rgba(red, green, blue, alpha); */
             opacity: 0.75;
+            border-radius: 0 0 50% 0;
+        }
+
+        .txt1 p1 {
+            display: inline-block;
+            padding: 150px 10px 10px 50px;
+            /* opacity: 1; */
+            font-size: 100px;
+            top: 50px;
+            position: relative;
+            font-family: 'Lobster', cursive;
+            color: rgb(255, 255, 255);
+            animation: movedown 1s linear 1;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+            visibility: hidden;
+        }
+
+        @keyframes movedown {
+            0% {
+                transform: translateY(-100px);
+                visibility: visible;
+            }
+
+            100% {
+                transform: translateY(0px);
+                visibility: visible;
+            }
         }
 
         .left img {
@@ -37,7 +66,7 @@
             /* display: inline; */
             position: relative;
             /* clip-path: circle(); */
-            border-radius: 23px;
+            /* border-radius: 23px; */
         }
 
         .center {
@@ -84,77 +113,19 @@
             color: rgb(214, 255, 227);
         }
 
+        .navbar li a:active {
+            text-decoration: underline;
+            color: rgb(214, 255, 227);
+        }
         .left {
             display: inline-block;
         }
-
-        .txt1 p1 {
-            display: inline-block;
-            padding: 100px 10px 10px 50px;
-            /* opacity: 1; */
-            font-size: 70px;
-            top: 100px;
-            position: relative;
-            font-family: 'Lobster', cursive;
-            color: rgb(255, 255, 255);
-            animation: movedown 1s linear 1;
-            animation-delay: 1s;
-            animation-fill-mode: forwards;
-            visibility: hidden;
+        .bag{
+            margin-top: 400px;
         }
-
-        .txt1 p2 {
-            padding: 250px 10px 10px 50px;
-            /* display: inline-block; */
-            /* opacity: 1; */
-            font-size: 20px;
-            top: 100px;
-            position: relative;
-            color: rgb(255, 255, 255);
-            font-family: 'Lobster', cursive;
-            animation: moveup 1s linear 1;
-            animation-delay: 1s;
-            visibility: hidden;
-            animation-fill-mode: forwards;
+        .bag h1{
+            text-align: center;
         }
-
-        @keyframes movedown {
-            0% {
-                transform: translateY(-100px);
-                visibility: visible;
-            }
-
-            100% {
-                transform: translateY(0px);
-                visibility: visible;
-            }
-        }
-
-        @keyframes moveup {
-            0% {
-                transform: translateY(100px);
-                visibility: visible;
-            }
-
-            100% {
-                transform: translateY(0px);
-                visibility: visible;
-            }
-        }
-
-        .part1 {
-            display: flex;
-            margin: 400px 10px 50px 80px;
-        }
-        .address{
-            margin-right: 150px;
-        }
-        form{
-            /* border: 2px solid black; */
-            padding: 0 10px 10px 10px;
-            justify-content: center;
-        }
-
         .contain {
             max-width: 1170px;
             margin: auto;
@@ -168,7 +139,6 @@
         ul {
             list-style: none;
         }
-
         .footer {
             background-color: #24262b;
             padding: 70px 0;
@@ -252,47 +222,9 @@
                 width: 100%;
             }
         }
-        #des{
-            width: 500px;
-            height: 80px;
-            justify-content: first baseline;
-            text-align: justify;
-            background-color: rgb(240, 238, 235);
-            border: 2px solid rgb(182, 182, 182);
-            font-size: 20px;
-        }
-        .form1{
-            margin: 0 50px 10px 100px;
-            font-size: 20px;
-        }
-        #title{
-            width: 500px;
-            height: 30px;
-            background-color: rgb(240, 238, 235);
-            border: 2px solid rgb(182, 182, 182);
-            font-size: 15px;
-            padding: 10px 10px 10px 10px;
-        }
-        #but{
-            width: 150px;
-            height: 30px;
-            background-color: rgb(61, 142, 248);
-            /* border: 2px solid rgb(182, 182, 182); */
-            font-size: 15px;
-            padding: 10px 10px 30px 10px;
-            justify-content: center;
-            border-radius: 15px;
-            /* margin-left: 50px; */
-        }
-        #but:hover{
-            /* background-color: white; */
-            border: 2px solid black;
-            color: black;
-            background-color: rgb(240, 238, 235);
-        }
+
     </style>
 </head>
-
 <body>
     <div class="bgimg">
         <header>
@@ -306,51 +238,17 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="aboutus.html">About Us</a></li>
-                    <li><a href="#" class="active">Contact Us</a></li>
-                    <li><a href="store.html">Store</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="#" class="active">Store</a></li>
                 </ul>
             </div>
+            <!-- right for button -->
         </header>
         <div class="txt1">
-            <p1>Contact Us</p1><br>
-            <p2>We don’t earn loyalty in a day. We earn loyalty day-by-day.</p2>
+            <p1>Our Store!</p1><br>
         </div>
-        <div class="part1">
-            <div class="address">
-                <h1>Our Mark</h1>
-                <h3>Registered Office</h3>
-                <p>
-                    Delhi<br><br>Sector 39- Rohini,<br><br> New Delhi-110081,<br><br>Delhi, India
-                </p>
-                <h3>Head Office</h3>
-                <p>Brampton,<br><br> ONTARIO L6X 3T7,<br><br> Ontario, Canada</p>
-                <hr class="one">
-                <h1>Call Us</h1>
-                <p>
-                    Phone: +91 9555732917,
-                    +91 9555732917
-                    <br><br>
-                    Monday to Friday - 9:00 AM to 6:00 PM
-                </p>
-                <hr>
-                <h1>Write to Us</h1>
-                <p>Business Inquiries: Info@thoriumtek.com <br><br>
-                    After Sales Support: sales@thoriumtek.com</p>
-            </div>
-            <div class="form1">
-                <form action="" class="contant">
-                    <h1>Let's talk</h1>
-                    <input type="text" id="title" placeholder="Your title"> <br><br>
-                    <input type="text" id="title" placeholder="First name"><br><br>
-                    <input type="text" id="title" placeholder="Last name"><br><br>
-                    <input type="email" id="title" name="kreena Patel" id="name@example.com" placeholder="Email"><br><br>
-                    <input type="" id="title" placeholder="Mobile number"><br><br>
-                    <input type="text" id="title" placeholder="How did you hear about us"><br><br>
-                    <label for="des">Enter Description:</label><br>
-                    <input type="text" id="des"><br><br>
-                    <input type="button" id="but" value="Send Query">
-                </form>
-            </div>
+        <div class="bag">
+            <h1>IT’S TIME TO PACK YOUR BAG WITH OUR PRODUCTS!</h1>
         </div>
         <footer class="footer">
             <div class="contain">
@@ -358,7 +256,7 @@
                     <div class="footer-col">
                         <h4>company</h4>
                         <ul>
-                            <li><a href="index.html#about">About us</a></li>
+                            <li><a href="#about">About us</a></li>
                             <li><a href="#">News and media</a></li>
                             <li><a href="contactus.html">Contact us</a></li>
                             <li><a href="#">Partner with us</a></li>
@@ -391,5 +289,4 @@
         </footer>
     </div>
 </body>
-
 </html>
